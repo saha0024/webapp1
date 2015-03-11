@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!--    <script src="js/geo.js"></script>-->
+
+
+
+
+
+
+
+
+<header class="apptitle">
+  <h1>Contacts Identification</h1>
+</header>
+<!-- tabbed navigation bar -->
+<nav class="tabs">
+  <ul>
+    <li class="li-1-3"><a href="#home" data-role="pagelink" class="activetab"><img src="img/home-white.png" style="width:30px;height:30px;display:block;padding-left: 30%">Home</a></li>
+    <li class="li-1-3"><a href="#map" data-role="pagelink"><img src="img/location-white.png" style="width:30px;height:30px;display:block;padding-left: 30%">Map</a></li>
+    <li class="li-1-3"><a href="#contacts" data-role="pagelink"><img src="img/phone-white.png" style="width:30px;height:30px;display:block;padding-left: 30%">Contacts</a></li>
+  </ul>
+</nav>
+
+<section data-role="page" id="home" class="active">
+  <h2>Information</h2>
+  <p>In this app, you can see your current location. This awesome app is able to fetch and display a random contact from the contacts in the device.</p>
+</section>
+<section data-role="page" id="map">
+  <h2>Location</h2>
+  <p>This page displays a Google Static map with a marker for your current location.</p>
+    <img id= "myCanvas">
+</section>
+<section data-role="page" id="contacts">
+  <h2>Contacts</h2>
+  <p>In this page, random contacts show from your contact list.</p>
+    <div id = "randomContact"></div>
+</section>
+    <script src="cordova.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
